@@ -64,5 +64,82 @@ return 0;
 //.....................................................FUCNCTIONS...................................................................................................
 //C REVISION
 
+/program to find greatest of 3 numbers 
 
 
+#include <stdio.h>
+
+int main()
+{
+    int A,B,C;
+    printf("Enter the value of A ");
+    scanf("%d",&A);
+    printf("Enter the value of B ");
+    scanf("%d",&B);
+    printf("Enter the value of C ");
+    scanf("%d",&C);
+    
+    if(A>B){
+        if(A>C){
+            printf("A is Greatest ");
+        }else{
+            printf("C is greatest");
+        }
+    }else{
+        if(C>B){
+        printf("The Value of C is greatest");    
+        }else{
+         printf("The Value of B is greatest here ");   
+        }
+        
+    }
+
+    return 0;
+}
+
+//================// PRACTICE SET 3 
+//Q.2 to check if a individual is passed in his exams or not 
+#include<stdio.h>
+int main(){
+    float sub1,sub2,sub3,Total;
+    printf("Enter the Marsk in Sub1 :");
+    scanf("%f",&sub1);
+    printf("Enter the Marsk in Sub2 :");
+    scanf("%f",&sub2);
+    printf("Enter the Marsk in Sub3 :");
+    scanf("%f",&sub3);
+    
+    Total = ((sub1+sub2+sub3)/300)*100;
+    printf("Total percentage is %f",Total);
+    
+    if(Total>40&&sub1>33&&sub2>33&&sub3>33){
+        printf("You have passed your Exams !!");
+    }else{
+        printf("You have failed your exams ");
+    }
+    return 0;
+}
+
+
+//Q.2/ to find a year is a leap year or not 
+#include<stdio.h>
+int main(){
+    int year,assi;
+    printf("Enter the year   :");
+    scanf("%d",&year);
+    
+    assi = year%4;
+    
+   // printf("%d",assi);
+    
+    if(assi==0){
+        printf("The year %d is a leap year",year);
+    }else{
+        printf("The year %d is not a leap year",year);
+    }
+    
+    return 0;
+}
+
+
+//Write  a program to check whether a year entered by the user is a leap year or not 
